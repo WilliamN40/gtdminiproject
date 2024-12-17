@@ -1,0 +1,276 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*
+{
+    font-family: sans-serif;
+}
+
+body
+{
+    background-color:ghostwhite;
+}
+
+p, h1, h2, h3
+{
+    margin: 0;
+}
+
+.container
+{
+    padding: 10px;
+}
+
+.flex-container
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile
+{
+    border-radius: 100%;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.description
+{
+    font-size: x-large;
+    text-align: center;
+    color: gray
+}
+
+.maincontent
+{
+    margin-top:30px;
+}
+
+.card
+{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 5px #b0b0b0;
+}
+
+.card-title
+{
+    margin-bottom: 15px;
+}
+
+.skills-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+@media (max-width: 768px)
+{
+    .skills-grid
+    {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.skill-flex
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    transition: transform .5s;
+}
+
+.skill-flex:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px #b0b0b0;
+}
+
+.skill-flex:nth-child(1)
+{
+    background-color: lightblue;
+}
+
+.skill-flex:nth-child(2)
+{
+    background-color: lightgreen;
+}
+
+.skill-flex:nth-child(3)
+{
+    background-color: plum;
+}
+
+.skill-title
+{
+    font-weight: bold;
+}
+
+.skill-desc
+{
+    font-size: .8em;
+}
+
+.skill-prof
+{
+    font-size: .7em;
+}
+
+.prof-container
+{
+    height:10px;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.skill-flex:nth-child(1) .prof-container
+{
+    background-color: lightsteelblue;
+}
+
+.skill-flex:nth-child(2) .prof-container
+{
+    background-color: #cbffcb;
+}
+
+.skill-flex:nth-child(3) .prof-container
+{
+    background-color: #ffceff;
+}
+
+.prof-bar
+{
+    height:100%;
+    border-radius: 10px;
+}
+
+.skill-flex:nth-child(1) .prof-bar
+{
+    background-color: blue;
+    width:75%;
+}
+
+.skill-flex:nth-child(2) .prof-bar
+{
+    background-color: green;
+    width:65%;
+}
+
+.skill-flex:nth-child(3) .prof-bar
+{
+    background-color: purple;
+    width:50%;
+}
+
+.project-grid
+{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap:20px;
+}
+
+@media (max-width: 768px)
+{
+    .project-grid
+    {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.project-flex
+{
+    display:flex;
+    background-color: #ededed;
+    padding: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-footer
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeline-box
+{
+    position: relative;
+    border-left: 5px solid gray;
+    padding-left: 50px;
+}
+
+.timeline-content
+{
+    padding: 10px;
+}
+
+.timeline-bullet
+{
+    position: absolute;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+}
+
+.timeline-content:nth-child(1) .timeline-bullet
+{
+    background-color: blue;
+}
+
+.timeline-content:nth-child(2) .timeline-bullet
+{
+    background-color: green;
+}
+
+.timeline-content:nth-child(3) .timeline-bullet
+{
+    background-color: purple;
+}
+
+.input-box
+{
+    width: 100%;
+    border-radius: 5px;
+    padding:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea
+{
+    resize: vertical
+}
+
+.button
+{
+    background-color: #008CBA;
+    color:white;
+    border-radius: 5px;
+    border: 0;
+    padding: 12px;
+}
+
+.button:hover
+{
+    background-color: #00465d;
+}
